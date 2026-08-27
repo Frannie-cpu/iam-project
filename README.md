@@ -1,0 +1,71 @@
+# Identity & Access Management Lifecycle Lab — Microsoft Entra ID
+
+**A hands-on IAM project simulating the full employee identity lifecycle — provisioning, authentication, governance, and deprovisioning — for a fictional company, NorthWind Dynamics, using Microsoft Entra ID.**
+
+---
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Skills Demonstrated](#skills-demonstrated)
+- [Environment](#environment)
+- [Scenario](#scenario)
+- [1. Provisioning: New Hires](#1-provisioning-new-hires)
+- [2. Group-Based Access](#2-group-based-access)
+- [3. Authentication: SSO & the OAuth 2.0 Authorization Code Flow](#3-authentication-sso--the-oauth-20-authorization-code-flow)
+- [4. Least-Privilege Admin Roles](#4-least-privilege-admin-roles)
+- [5. Multi-Factor Authentication](#5-multi-factor-authentication)
+- [6. Just-in-Time Privileged Access (PIM)](#6-just-in-time-privileged-access-pim)
+- [7. Access Reviews](#7-access-reviews)
+- [8. Conditional Access Hardening](#8-conditional-access-hardening)
+- [9. Movers: Mid-Lifecycle Role Change](#9-movers-mid-lifecycle-role-change)
+- [10. Leavers: Offboarding & the Cost of Deprovisioning Delay](#10-leavers-offboarding--the-cost-of-deprovisioning-delay)
+- [11. Over-Permissioned Service Account](#11-over-permissioned-service-account)
+- [Key Concepts Reference](#key-concepts-reference)
+- [Takeaways](#takeaways)
+
+---
+
+## Overview
+
+Real IAM work is a **lifecycle**: people join, their roles change, they leave — and every one of those transitions is an opportunity for either good security hygiene or an audit finding. This project walks through that full lifecycle inside Microsoft Entra ID, including the two scenarios that show up most often in real security audits: **permission creep from role changes**, and **deprovisioning delay after termination**.
+
+## Skills Demonstrated
+
+- User provisioning and attribute management in Microsoft Entra ID
+- Group-based access management and dynamic group rules
+- OAuth 2.0 / OpenID Connect authentication flow (Authorization Code flow)
+- Role-Based Access Control (RBAC) and least-privilege role assignment
+- Privileged Identity Management (PIM) — just-in-time admin access
+- Conditional Access policy design, including break-glass account handling
+- Access reviews and periodic governance
+- Joiner-Mover-Leaver (JML) lifecycle management
+- Service account / non-human identity risk remediation
+- Security audit thinking — identifying and documenting real-world findings
+
+## Environment
+
+- Microsoft 365 Developer tenant (free — [developer.microsoft.com/microsoft-365/dev-program](https://developer.microsoft.com/microsoft-365/dev-program))
+- Microsoft Entra admin center
+- jwt.ms (Microsoft's token decoding tool) for inspecting OAuth tokens
+
+## Scenario
+
+NorthWind Dynamics is onboarding four new employees this week. As the IAM analyst, I'm responsible for provisioning their access correctly from day one, then carrying that responsibility through role changes, offboarding, and cleanup of risky non-human accounts.
+
+| Employee       | Job Title    | License              | Security Group       | Admin Role                    |
+|----------------|--------------|----------------------|----------------------|-------------------------------|
+| Abigail Okafor | CEO          | Microsoft 365 E5     | Executives           | None                          |
+| Abraham Kofi   | Receptionist | Office 365 E1        | Receptionist Team    | None                          |
+| Abel Jaanus    | IT Support   | Microsoft 365 E5     | IT                   | Helpdesk Admin (via PIM)      |
+| Abner Taavi    | HR Manager   | Microsoft 365 E5     | HR Group             | None                          |
+
+**Design principle:** the CEO — despite being the most senior person in the company — gets **no** admin role. Seniority is not the same as system control. Only IT Support gets elevated access, and even then, only temporarily, via PIM.
+
+---
+
+## 1. Provisioning: New Hires
+
+Created four user accounts in the Entra admin center with consistent naming, correct job titles/departments, and appropriate license assignment (E5 for full toolset roles, E1 for the receptionist role where a lighter license was sufficient).
+
+> 📸 **Screenshot:** Users list in Entra admin center showing all four accounts, licensed and active.
