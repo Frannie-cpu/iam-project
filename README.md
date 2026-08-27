@@ -69,3 +69,5 @@ NorthWind Dynamics is onboarding four new employees this week. As the IAM analys
 Created four user accounts in the Entra admin center with consistent naming, correct job titles/departments, and appropriate license assignment (E5 for full toolset roles, E1 for the receptionist role where a lighter license was sufficient).
 
 > 📸 **Screenshot:** Users list in Entra admin center showing all four accounts, licensed and active.
+>
+>  ![Users List](screenshots/1a-users-list-on-entra ID.png)
