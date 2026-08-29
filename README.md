@@ -60,7 +60,7 @@ NorthWind Dynamics is onboarding four new employees this week. As the IAM analys
 | Abel Jaanus    | IT Support   | Microsoft 365 E5     | IT                   | Helpdesk Admin                |
 | Abner Taavi    | HR Manager   | Microsoft 365 E5     | HR Group             | None                          |
 
-**Design principle:** the HR Manager — despite being the most senior person on the Human Resource (HR) team — gets **no** admin role. Seniority is not the same as system control. Only IT Support gets **certain** elevated access, and even then, only temporarily, via PIM.
+**Design principle:** the HR Manager — despite being the most senior person on the Human Resource (HR) team — gets **no** admin role. Seniority is not the same as system control. Only IT Support gets the Help Desk Admin role and for **some** more elevated access, only temporarily, via PIM.
 
 ---
 
@@ -91,7 +91,7 @@ I created four security groups (`Executives`, `Receptionist Team`, `Human Resour
 
 For example: - I created a **security group** for the `Human Resource Team` 
 - Assigned the license (Office 365 E1) to the team because the embedded applications are required for members of the team to carry out their duties.
-- Added Abner Taavi (HR Manager) to the`Human Resource Team` 
+- Added **Abner Taavi** (HR Manager) to the`Human Resource Team` 
 
 See screenshot showing how the security grouping appears for **Human Resource Team**.
 
@@ -105,7 +105,7 @@ See screenshot showing how the security grouping appears for **Human Resource Te
 I created a **security group** for the `User Technology Team` 
 - Assigned the license (Microsoft 365 E5) to the team because the embedded applications are required for members of the team to carry out their duties.
 - Under the Admin center access, I assigned the **Helpdesk Administrator** role to the `User Technology Team`  because members will perform password change activities for users.
-- Added Abel Jaanus (IT Support) as a member to the `User Technology Team`
+- Added **Abel Jaanus** (IT Support) as a member to the `User Technology Team`
 
 See screenshot showing how the security grouping appears for **User Technology Team**.
 
