@@ -12,10 +12,10 @@
 - [Scenario](#scenario)
 - [1. Provisioning: New Hires](#1-provisioning-new-hires)
 - [2. Group-Based Access](#2-group-based-access)
-- [3. Authentication: SSO & the OAuth 2.0 Authorization Code Flow](#3-authentication-sso--the-oauth-20-authorization-code-flow)
-- [4. Least-Privilege Admin Roles](#4-least-privilege-admin-roles)
-- [5. Multi-Factor Authentication](#5-multi-factor-authentication)
-- [6. Just-in-Time Privileged Access (PIM)](#6-just-in-time-privileged-access-pim)
+- [3. Just-in-Time Privileged Access (PIM)](#3-just-in-time-privileged-access-pim)
+- [4. Authentication: SSO & the OAuth 2.0 Authorization Code Flow](#4-authentication-sso--the-oauth-20-authorization-code-flow)
+- [5. Least-Privilege Admin Roles](#5-least-privilege-admin-roles)
+- [6. Multi-Factor Authentication](#6-multi-factor-authentication)
 - [7. Access Reviews](#7-access-reviews)
 - [8. Conditional Access Hardening](#8-conditional-access-hardening)
 - [9. Movers: Mid-Lifecycle Role Change](#9-movers-mid-lifecycle-role-change)
@@ -134,6 +134,12 @@ See screenshot showing how it looks on the platform.
 >>![Users List](screenshots/human%20resource%20team%202.png)
 
 
-
+## 6-Just-in-time-privileged-access-pim
 NEXT 
-Practice "how would you handle" scenarios: a user like hr manager and IT support needs elevated access temporarily through PIM
+Practice "how would you handle" scenarios: a user like hr manager and IT support needs elevated access temporarily through PIM  Part F — Just-in-Time Privileged Access (PIM)
+
+NEXT
+Jml
+
+NEXT
+conditional access
