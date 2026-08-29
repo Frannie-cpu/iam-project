@@ -76,3 +76,28 @@ Created four user accounts in the Entra admin center with consistent naming, cor
 >
 > ![Users List](screenshots/replacement.png)
 
+---
+
+## 2. Group-Based Access
+
+Rather than assigning access per-user, I used **two different group types** in Entra ID, chosen deliberately based on what each was actually for:
+
+- **Security Groups** — used purely for access control: license assignment, and (for IT) admin role eligibility.
+- **Microsoft 365 Group** — for a shared collaboration space: a shared inbox, shared calendar, and a private Teams space for the team to work from.
+
+I created four security groups (`Executives`, `Receptionist Team`, `Human Resource Team Group`, `User Technology Team`) and added each relevant employee as members, to the group matching their function.
+I assigned the Helpdesk Administrator role to the **User Technology Team**.
+See screenshot showing how the security group appears for **Human Resource Team** and **User Technology Team**.
+
+> 📸 **Screenshot:** Group membership list showing correct assignment for all four users.
+> 
+I created a Microsoft 365 group for **Human Resource Team**
+See screenshot showing how it looks on the platform. 2p
+
+
+> 📸 **Screenshot:** Group membership list showing correct assignment for all four users.
+
+I deliberately used both group types for **Human Resource Team** because the team had two distinct needs that don't overlap: **license/access governance** (handled by the Security Group) and **team collaboration** (handled by the Microsoft 365 Group). 
+
+Note: The Microsoft 365 group can be used for all teams as required — for a team shared collaboration space: a shared inbox, shared calendar, and a private Teams space for the team to work from.
+
