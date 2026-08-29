@@ -82,12 +82,15 @@ Created four user accounts in the Entra admin center with consistent naming, cor
 
 Rather than assigning access per-user, I used **two different group types** in Entra ID, chosen deliberately based on what each was actually for:
 
-- **Security Groups** — used purely for access control: license assignment, and (for IT) admin role eligibility.
+- **Security Group** — used purely for access control: license assignment, and (for IT) admin role eligibility.
 - **Microsoft 365 Group** — for a shared collaboration space: a shared inbox, shared calendar, and a private Teams space for the team to work from.
+
+**Security Group**
 
 I created four security groups (`Executives`, `Receptionist Team`, `Human Resource Team Group`, `User Technology Team`) and added each relevant employee as members, to the group matching their function.
 
-See screenshot showing how the security group appears for **Human Resource Team**.
+For example: See screenshot showing how the security grouping appears for **Human Resource Team**.
+
 
 > ![Users List](screenshots/security%20group%202.png)
 > 
@@ -96,26 +99,34 @@ See screenshot showing how the security group appears for **Human Resource Team*
 > ![Users List](screenshots/security%20group%204.png)
 >
 
-See screenshot showing how the security group appears for **User Technology Team**.
+
+See screenshot showing how the security grouping appears for **User Technology Team**.
+
 Notice I assigned the Helpdesk Administrator role to the **User Technology Team**.-------
 
-> ![Users List](screenshots/usertechteam1.png
+
+
+> ![Users List](screenshots/usertechteam1.png)
 >
-> ![Users List](screenshots/usertechteam2.png
+> ![Users List](screenshots/usertechteam2.png)
 >
-> ![Users List](screenshots/usertechteam3.png
+> ![Users List](screenshots/usertechteam3.png)
 >
 
+
+
+**Microsoft 365 Group**
+
 I created a Microsoft 365 group for **Human Resource Team**
+
+I deliberately used both security and Microsoft 365 group types for **Human Resource Team** because the team had two distinct needs that don't overlap: **license/access governance** (handled by the Security Group) and **team collaboration** (handled by the Microsoft 365 Group). 
+
 See screenshot showing how it looks on the platform. 2p
 
 >![Users List](screenshots/human%20resource%20team%201.png)
 >
 >>![Users List](screenshots/human%20resource%20team%202.png)
 
-See screenshot showing how the security group appears for **User Technology Team**.
 
-I deliberately used both group types for **Human Resource Team** because the team had two distinct needs that don't overlap: **license/access governance** (handled by the Security Group) and **team collaboration** (handled by the Microsoft 365 Group). 
-
-Note: The Microsoft 365 group can be used for all teams as required — for a team shared collaboration space: a shared inbox, shared calendar, and a private Teams space for the team to work from.
+Note: The Microsoft 365 group can be used for all teams if required — for team shared collaborations, a shared inbox, shared calendar, and a private Teams space for the team to work from.
 
