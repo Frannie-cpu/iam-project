@@ -134,8 +134,8 @@ See screenshot showing how it looks on the platform.
 >>![Users List](screenshots/human%20resource%20team%202.png)
 
 
-## 6-Just-in-time-privileged-access-pim
-NEXT 
+## 3-Just-in-time-privileged-access-pim
+ 
 Practice "how would you handle" scenarios: a user like hr manager and IT support needs elevated access temporarily through PIM  Part F — Just-in-Time Privileged Access (PIM)
 
 NEXT
