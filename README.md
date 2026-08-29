@@ -60,7 +60,7 @@ NorthWind Dynamics is onboarding four new employees this week. As the IAM analys
 | Abel Jaanus    | IT Support   | Microsoft 365 E5     | IT                   | Helpdesk Admin                |
 | Abner Taavi    | HR Manager   | Microsoft 365 E5     | HR Group             | None                          |
 
-**Design principle:** the HR Manager — despite being the most senior person on the Human Resource (HR) team — gets **no** admin role. Seniority is not the same as system control. Only IT Support gets the Help Desk Admin role and for **some** more elevated access, only temporarily, via PIM.
+**Design principle:**  RBAC is applied such that admin rights match actual job need — not seniority. The HR Manager — despite being the most senior person on the Human Resource (HR) team — gets **no** admin role. Seniority is not the same as system control. Only IT Support gets the Help Desk Admin role and for **some** more elevated access, only temporarily, via PIM.
 
 ---
 
@@ -104,7 +104,7 @@ See screenshot showing how the security grouping appears for **Human Resource Te
 
 I created a **security group** for the `User Technology Team` 
 - Assigned the license (Microsoft 365 E5) to the team because the embedded applications are required for members of the team to carry out their duties.
-- Under the Admin center access, I assigned the **Helpdesk Administrator** role to the `User Technology Team`  because members will perform password change activities for users.
+- Under the Admin center access, I assigned the **Helpdesk Administrator** role to the `User Technology Team`  because members will perform password change activities for users. 'explain why Global Administrator would be excessive for the IT Support role'
 - Added **Abel Jaanus** (IT Support) as a member to the `User Technology Team`
 
 See screenshot showing how the security grouping appears for **User Technology Team**.
@@ -135,3 +135,5 @@ See screenshot showing how it looks on the platform.
 
 
 
+NEXT 
+Practice "how would you handle" scenarios: a user like hr manager and IT support needs elevated access temporarily through PIM
