@@ -12,8 +12,8 @@
 - [Scenario](#scenario)
 - [1. Provisioning: New Hires](#1-provisioning-new-hires)
 - [2. Group-Based Access](#2-group-based-access)
-- [3. Just-in-Time Privileged Access (PIM)](#3-just-in-time-privileged-access-pim)
-- [4. Joiners Movers and Leavers Lifecycle](#4-joiners-movers-and-leavers-lifecycle)
+- [3. Just-In-Time Privileged Access (PIM)](#3-just-in-time-privileged-access-pim)
+- [4. Joiners Movers and Leavers Lifecycle Management](#4-joiners-movers-and-leavers-lifecycle-management)
 - [5. Conditional Access Policy](#5-conditional-access-policy)
 - [6. Authentication: SSO & the OAuth 2.0 Authorization Code Flow](#6-authentication-sso--the-oauth-20-authorization-code-flow)
 - [7. Least-Privilege Admin Roles](#7-least-privilege-admin-roles)
@@ -136,12 +136,12 @@ See screenshot showing how it looks on the platform.
 >>![Users List](screenshots/human%20resource%20team%202.png)
 
 
-## 3-Just-in-time-privileged-access-pim
+## 3. Just In-Time Privileged Access-PIM
  
 Practice "how would you handle" scenarios: a user like hr manager and IT support needs elevated access temporarily through PIM  Part F — Just-in-Time Privileged Access (PIM)
 
-NEXT
+## 4. Joiners Movers and Leavers Lifecycle Management
 Jml
 
-NEXT
+## 5. Conditional-Access-Policy
 conditional access
