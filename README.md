@@ -73,6 +73,6 @@ Created four user accounts in the Entra admin center with consistent naming, cor
 >![Users List](screenshots/1a-users-list-on-entraid.png)
 >
 > Users list in Microsoft 365 admin center showing all four accounts, licensed and active.
-> 
->![Users List](screenshots/1b-users-list-on-365.png)
+>
+> ![Users List](screenshots/replacement.png)
 
