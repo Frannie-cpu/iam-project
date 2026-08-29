@@ -57,10 +57,10 @@ NorthWind Dynamics is onboarding four new employees this week. As the IAM analys
 |----------------|--------------|----------------------|----------------------|-------------------------------|
 | Abigail Okafor | CEO          | Microsoft 365 E5     | Executives           | None                          |
 | Abraham Kofi   | Receptionist | Office 365 E1        | Receptionist Team    | None                          |
-| Abel Jaanus    | IT Support   | Microsoft 365 E5     | IT                   | Helpdesk Admin (via PIM)      |
+| Abel Jaanus    | IT Support   | Microsoft 365 E5     | IT                   | Helpdesk Admin                |
 | Abner Taavi    | HR Manager   | Microsoft 365 E5     | HR Group             | None                          |
 
-**Design principle:** the CEO — despite being the most senior person in the company — gets **no** admin role. Seniority is not the same as system control. Only IT Support gets elevated access, and even then, only temporarily, via PIM.
+**Design principle:** the HR Manager — despite being the most senior person on the Human Resource (HR) team — gets **no** admin role. Seniority is not the same as system control. Only IT Support gets **certain** elevated access, and even then, only temporarily, via PIM.
 
 ---
 
@@ -87,31 +87,34 @@ Rather than assigning access per-user, I used **two different group types** in E
 
 **Security Group**
 
-I created four security groups (`Executives`, `Receptionist Team`, `Human Resource Team Group`, `User Technology Team`) and added each relevant employee as members, to the group matching their function.
+I created four security groups (`Executives`, `Receptionist Team`, `Human Resource Team`, `User Technology Team`) and added each relevant employee as members, to the group matching their function.
 
-For example: See screenshot showing how the security grouping appears for **Human Resource Team**.
+For example: - I created a **security group** for the `Human Resource Team` 
+- Assigned the license (Office 365 E1) to the team because the embedded applications are required for members of the team to carry out their duties.
+- Added Abner Taavi (HR Manager) to the`Human Resource Team` 
 
+See screenshot showing how the security grouping appears for **Human Resource Team**.
 
 > ![Users List](screenshots/security%20group%202.png)
-> 
+> ![Users List](screenshots/security%20group%204.png)
 > ![Users List](screenshots/security%20group%203.png)
 > 
-> ![Users List](screenshots/security%20group%204.png)
+
 >
 
+I created a **security group** for the `User Technology Team` 
+- Assigned the license (Microsoft 365 E5) to the team because the embedded applications are required for members of the team to carry out their duties.
+- Under the Admin center access, I assigned the **Helpdesk Administrator** role to the `User Technology Team`  because members will perform password change activities for users.
+- Added Abel Jaanus (IT Support) as a member to the `User Technology Team`
 
 See screenshot showing how the security grouping appears for **User Technology Team**.
 
-Notice I assigned the Helpdesk Administrator role to the **User Technology Team**.-------
 
-
-
-> ![Users List](screenshots/usertechteam1.png)
->
 > ![Users List](screenshots/usertechteam2.png)
 >
 > ![Users List](screenshots/usertechteam3.png)
 >
+> ![Users List](screenshots/usertechteam1.png)
 
 
 
@@ -121,12 +124,14 @@ I created a Microsoft 365 group for **Human Resource Team**
 
 I deliberately used both security and Microsoft 365 group types for **Human Resource Team** because the team had two distinct needs that don't overlap: **license/access governance** (handled by the Security Group) and **team collaboration** (handled by the Microsoft 365 Group). 
 
-See screenshot showing how it looks on the platform. 2p
+
+Note: The Microsoft 365 group can be used for all teams if required — for team shared collaborations, a shared inbox, shared calendar, and a private Teams space for the team to work from.
+
+See screenshot showing how it looks on the platform. 
 
 >![Users List](screenshots/human%20resource%20team%201.png)
 >
 >>![Users List](screenshots/human%20resource%20team%202.png)
 
 
-Note: The Microsoft 365 group can be used for all teams if required — for team shared collaborations, a shared inbox, shared calendar, and a private Teams space for the team to work from.
 
