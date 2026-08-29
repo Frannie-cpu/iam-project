@@ -86,17 +86,34 @@ Rather than assigning access per-user, I used **two different group types** in E
 - **Microsoft 365 Group** — for a shared collaboration space: a shared inbox, shared calendar, and a private Teams space for the team to work from.
 
 I created four security groups (`Executives`, `Receptionist Team`, `Human Resource Team Group`, `User Technology Team`) and added each relevant employee as members, to the group matching their function.
-I assigned the Helpdesk Administrator role to the **User Technology Team**.
-See screenshot showing how the security group appears for **Human Resource Team** and **User Technology Team**.
 
-> 📸 **Screenshot:** Group membership list showing correct assignment for all four users.
+See screenshot showing how the security group appears for **Human Resource Team**.
+
+> ![Users List](screenshots/security%20group%202.png)
 > 
+> ![Users List](screenshots/security%20group%203.png)
+> 
+> ![Users List](screenshots/security%20group%204.png)
+>
+
+See screenshot showing how the security group appears for **User Technology Team**.
+Notice I assigned the Helpdesk Administrator role to the **User Technology Team**.-------
+
+> ![Users List](screenshots/usertechteam1.png
+>
+> ![Users List](screenshots/usertechteam2.png
+>
+> ![Users List](screenshots/usertechteam3.png
+>
+
 I created a Microsoft 365 group for **Human Resource Team**
 See screenshot showing how it looks on the platform. 2p
 
 >![Users List](screenshots/human%20resource%20team%201.png)
 >
 >>![Users List](screenshots/human%20resource%20team%202.png)
+
+See screenshot showing how the security group appears for **User Technology Team**.
 
 I deliberately used both group types for **Human Resource Team** because the team had two distinct needs that don't overlap: **license/access governance** (handled by the Security Group) and **team collaboration** (handled by the Microsoft 365 Group). 
 
