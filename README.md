@@ -95,6 +95,8 @@ I created a Microsoft 365 group for **Human Resource Team**
 See screenshot showing how it looks on the platform. 2p
 
 >![Users List](screenshots/human%20resource%20team%201.png)
+>
+>>![Users List](screenshots/human%20resource%20team%202.png)
 
 I deliberately used both group types for **Human Resource Team** because the team had two distinct needs that don't overlap: **license/access governance** (handled by the Security Group) and **team collaboration** (handled by the Microsoft 365 Group). 
 
