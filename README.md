@@ -147,7 +147,7 @@ Abel Jaanus (UT support) needs elevated access, to enable them perform admin dut
 
 **Why this matters:** if a hacker steals Abel's password while the role is switched off, they get only an ordinary account, not admin power.
 
-I added a new assignment for the **Helpdesk Administrator** role.
+I added a new assignment and added the **Helpdesk Administrator** role.**Global Administrator** role will be excessive for UT Support, so **helpdesk administrator** is suitable. 
 
 > ![Users List](screenshots/addrole.png)
 >
@@ -170,7 +170,7 @@ require approval to activate.
 
 
 
-**Global Administrator** would be excessive for UT Support, so **user administrator** role via PIM will be suitable. 
+
 
 ## 4. Joiners Movers and Leavers Lifecycle Management
 Jml
