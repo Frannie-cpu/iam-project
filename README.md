@@ -112,7 +112,7 @@ I created a **security group** for the `User Technology Team`
 - Assigned the license (Microsoft 365 E5) to the team because the embedded applications are required for members of the team to carry out their duties.
 - Assigned the **User** role to the `User Technology Team`  with no admin center access role. Members of the team like UT Support who needs a role to assist users with activities like password change will have to request for admin center access. See [3. Just-In-Time Privileged Access (PIM)](#3-just-in-time-privileged-access-pim)
   
-- Added **Abel Jaanus** (IT Support) as a member to the `User Technology Team`
+- Added **Abel Jaanus** (UT Support) as a member to the `User Technology Team`
 
 See screenshot showing how the security grouping appears for **User Technology Team**.
 
@@ -145,8 +145,30 @@ See screenshot showing how it looks on the platform.
  
 Abel Jaanus (UT support) needs elevated access, to enable them perform admin duties like password change etc. They can temporarily apply for this role within a specified period, after which access switches off by itself. This is called just-in-time access.
 
-
 **Why this matters:** if a hacker steals Abel's password while the role is switched off, they get only an ordinary account, not admin power.
+
+I added a new assignment for the **Helpdesk Administrator** role.
+
+> ![Users List](screenshots/addrole.png)
+>
+  > I added Abel Jaanus as a member to the role and set assignment type to `Eligible` and not `Active` . This way Abel is only eligible and needs to authenticate and activate, the assigned role.
+> 
+> ![Users List](screenshots/addmember.png)
+>
+> I setup the assignment maximum duration to 4 hours, to require multi-factor authentication on activation, require justification, and
+require approval to activate.
+> 
+> ![Users List](screenshots/rolesettings.png)
+>
+> Abel is now `Eligible`  for the assigned role but needs to activate the role on their end before they can use it.
+> 
+> ![Users List](screenshots/eligibleassignment.png)
+>
+> 
+> ![Users List](screenshots/noactiveassignment.png)
+
+
+
 
 **Global Administrator** would be excessive for UT Support, so **user administrator** role via PIM will be suitable. 
 
