@@ -167,12 +167,11 @@ require approval to activate.
 > ![Users List](screenshots/noactiveassignment.png)
 
 
+## 3. Just-In-Time Privileged Access (PIM)
 
 
+## 4. Movers: Mid-Lifecycle Role Change
 
-
-## 4. Joiners Movers and Leavers Lifecycle Management
-Jml
 
 ## 5. Conditional-Access-Policy
 conditional access
