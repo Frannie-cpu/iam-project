@@ -59,10 +59,14 @@ NorthWind Dynamics is onboarding four new employees this week. As the IAM analys
 |----------------|--------------|----------------------|----------------------|-------------------------------|
 | Abigail Okafor | CEO          | Microsoft 365 E5     | Executives           | None                          |
 | Abraham Kofi   | Receptionist | Office 365 E1        | Receptionist Team    | None                          |
-| Abel Jaanus    | IT Support   | Microsoft 365 E5     | IT                   | Helpdesk Admin                |
+| Abel Jaanus    | UT Support   | Microsoft 365 E5     | User Technology      | Helpdesk/User Admin (via PIM) |
 | Abner Taavi    | HR Manager   | Microsoft 365 E5     | HR Group             | None                          |
 
-**Design principle:**  RBAC is applied such that admin rights match actual job need — not seniority. The HR Manager — despite being the most senior person on the Human Resource (HR) team — gets **no** admin role. Seniority is not the same as system control. Only IT Support gets the Help Desk Admin role and for **some** more elevated access, only temporarily, via PIM.
+**Design principle:**  RBAC is applied such that admin rights match actual job need — not seniority. The HR Manager — despite being the most senior person on the Human Resource (HR) team — gets **no** admin role. Seniority is not the same as system control. Only UT Support gets the Help Desk/User Admin role and only temporarily, via PIM.
+
+An Admin role is admin power, like resetting other people's passwords. 
+
+The rule is simple: **Give people the least they need. Most employees need none at all.**
 
 ---
 
@@ -84,14 +88,14 @@ Created four user accounts in the Entra admin center with consistent naming, cor
 
 Rather than assigning access per-user, I used **two different group types** in Entra ID, chosen deliberately based on what each was actually for:
 
-- **Security Group** — used purely for access control: license assignment, and (for IT) admin role eligibility.
+- **Security Group** — used purely for access control: license assignment, and (for UT) admin role eligibility.
 - **Microsoft 365 Group** — for a shared collaboration space: a shared inbox, shared calendar, and a private Teams space for the team to work from.
 
 **Security Group**
 
 I created four security groups (`Executives`, `Receptionist Team`, `Human Resource Team`, `User Technology Team`) and added each relevant employee as members, to the group matching their function.
 
-For example: - I created a **security group** for the `Human Resource Team` 
+For example: - I created a **security group** for the `Human Resource Team` with only User role (no Admin Center Access role).
 - Assigned the license (Office 365 E1) to the team because the embedded applications are required for members of the team to carry out their duties.
 - Added **Abner Taavi** (HR Manager) to the`Human Resource Team` 
 
@@ -106,7 +110,8 @@ See screenshot showing how the security grouping appears for **Human Resource Te
 
 I created a **security group** for the `User Technology Team` 
 - Assigned the license (Microsoft 365 E5) to the team because the embedded applications are required for members of the team to carry out their duties.
-- Under the Admin center access, I assigned the **Helpdesk Administrator** role to the `User Technology Team`  because members will perform password change activities for users. 'explain why Global Administrator would be excessive for the IT Support role'
+- Assigned the **User** role to the `User Technology Team`  with no admin center access role. Members of the team like UT Support who needs a role to assist users with activities like password change will have to request for admin center access. See [3. Just-In-Time Privileged Access (PIM)](#3-just-in-time-privileged-access-pim)
+  
 - Added **Abel Jaanus** (IT Support) as a member to the `User Technology Team`
 
 See screenshot showing how the security grouping appears for **User Technology Team**.
@@ -114,7 +119,7 @@ See screenshot showing how the security grouping appears for **User Technology T
 
 > ![Users List](screenshots/usertechteam2.png)
 >
-> ![Users List](screenshots/usertechteam3.png)
+> ![Users List](screenshots/ut-no%20admin%20role.png) 
 >
 > ![Users List](screenshots/usertechteam1.png)
 
@@ -138,7 +143,9 @@ See screenshot showing how it looks on the platform.
 
 ## 3. Just In-Time Privileged Access-PIM
  
-Practice "how would you handle" scenarios: a user like hr manager and IT support needs elevated access temporarily through PIM  Part F — Just-in-Time Privileged Access (PIM)
+Abel Jaanus (UT support) needs elevated access, to enable them perform admin duties like password change etc. The principle of least priviledge is applied here such that they can temporarily apply for this role within a specified period, through PIM 
+
+**Global Administrator** would be excessive for UT Support, so **user administrator** role via PIM will be suitable. 
 
 ## 4. Joiners Movers and Leavers Lifecycle Management
 Jml
