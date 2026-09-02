@@ -66,7 +66,7 @@ NorthWind Dynamics is onboarding four new employees this week. As the IAM analys
 
 An Admin role is admin power, like resetting other people's passwords. 
 
-The rule is simple: **Give people the least they need. Most employees need none at all.**
+The principle of least privilege is simple here: **Give people the least they need.** Most employees need none at all.
 
 ---
 
@@ -143,7 +143,10 @@ See screenshot showing how it looks on the platform.
 
 ## 3. Just In-Time Privileged Access-PIM
  
-Abel Jaanus (UT support) needs elevated access, to enable them perform admin duties like password change etc. The principle of least priviledge is applied here such that they can temporarily apply for this role within a specified period, through PIM 
+Abel Jaanus (UT support) needs elevated access, to enable them perform admin duties like password change etc. They can temporarily apply for this role within a specified period, after which access switches off by itself. This is called just-in-time access.
+
+
+**Why this matters:** if a hacker steals Abel's password while the role is switched off, they get only an ordinary account, not admin power.
 
 **Global Administrator** would be excessive for UT Support, so **user administrator** role via PIM will be suitable. 
 
