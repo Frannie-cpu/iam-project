@@ -170,6 +170,16 @@ require approval to activate.
 
 ## 4. Movers: Mid-Lifecycle Role Change
 
+| What Happened | Who | What I Did |
+|---|---|---|
+| Promotion (a Mover) | Abraham Kofi, from Receptionist to IAM Specialist | I updated his job details, added him to the IAM Specialist group, and removed him from the old Receptionist group. |
 
-## 5. Conditional-Access-Policy
+
+## 5. Leavers: Offboarding & the Cost of Deprovisioning Delay
+
+| What Happened | Who | What I Did |
+|---|---|---|
+| Resignation (a Leaver) | Abner Taavi, HR Manager | I blocked his sign-in, signed him out everywhere, removed his groups, saved his work, and took back his licence. |
+
+## 6. Conditional-Access-Policy
 conditional access
