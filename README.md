@@ -193,7 +193,7 @@ A new team group `IAM Team` was introduced here.
 
 > ![Users List](screenshots/addabraham2.png)
 
-- I took away the old receptionist access , he no longer needs. Abraham is no longer a Receptionist, so he should not keep his old access. If the access is not removed, he keeps collecting access for years, which is called **privilege creep**. This is how an ordinary account slowly turns into a very dangerous one.
+- I took away the old `Receptionist Team` access , he no longer needs. Abraham is no longer a Receptionist, so he should not keep his old access. If the access is not removed, he keeps collecting access for years, which is called **privilege creep**. This is how an ordinary account slowly turns into a very dangerous one.
 
 > ![Users List](screenshots/removeabraham.png)
 
