@@ -167,8 +167,6 @@ require approval to activate.
 > ![Users List](screenshots/noactiveassignment.png)
 
 
-## 3. Just-In-Time Privileged Access (PIM)
-
 
 ## 4. Movers: Mid-Lifecycle Role Change
 
