@@ -170,10 +170,17 @@ require approval to activate.
 
 ## 4. Movers: Mid-Lifecycle Role Change
 
+A new team group `IAM Team` was introduced here. 
 | What Happened | Who | What I Did |
 |---|---|---|
 | Promotion (a Mover) | Abraham Kofi, from Receptionist to IAM Specialist | I updated his job details, added him to the IAM Specialist group, and removed him from the old Receptionist group. |
 
+I updated Abraham Kofi's job details, so the system knows he moved from the `Receptionist Team` and joined a new team
+
+
+I gave him his new access by adding him to the `IAM Team` group
+
+I took away the old receptionist access , he no longer needs. Abraham is no longer a Receptionist, so he should not keep his old access. If the access is not removed, he keeps collecting access for years, which is called **privilege creep**. This is how an ordinary account slowly turns into a very dangerous one.
 
 ## 5. Leavers: Offboarding & the Cost of Deprovisioning Delay
 
