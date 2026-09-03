@@ -71,7 +71,9 @@ The principle of least privilege is simple here: **Give people the least they ne
 
 ## 1. Provisioning: New Hires
 
-Created four user accounts in the Entra admin center with consistent naming, correct job titles/departments, and appropriate license assignment (E5 for full toolset roles, E1 for the receptionist role where a lighter license was sufficient).
+**STEPS**
+
+- Created four user accounts in the Entra admin center with consistent naming, correct job titles/departments, and appropriate license assignment (E5 for full toolset roles, E1 for the receptionist role where a lighter license was sufficient).
 
 > Users list in Entra admin center showing all four accounts.
 > 
@@ -92,6 +94,8 @@ Rather than assigning access per-user, I used **two different group types** in E
 
 **Security Group**
 
+**STEPS**
+
 I created four security groups (`Executives`, `Receptionist Team`, `Human Resource Team`, `User Technology Team`) and added each relevant employee as members, to the group matching their function.
 
 For example: - I created a **security group** for the `Human Resource Team` with only User role (no Admin Center Access role).
@@ -105,7 +109,7 @@ See screenshot showing how the security grouping appears for **Human Resource Te
 > ![Users List](screenshots/security%20group%203.png)
 > 
 
->
+**STEPS**
 
 I created a **security group** for the `User Technology Team` 
 - Assigned the license (Microsoft 365 E5) to the team because the embedded applications are required for members of the team to carry out their duties.
@@ -126,9 +130,11 @@ See screenshot showing how the security grouping appears for **User Technology T
 
 **Microsoft 365 Group**
 
-I created a Microsoft 365 group for **Human Resource Team**
+**STEPS**
 
-I deliberately used both security and Microsoft 365 group types for **Human Resource Team** because the team had two distinct needs that don't overlap: **license/access governance** (handled by the Security Group) and **team collaboration** (handled by the Microsoft 365 Group). 
+- I created a Microsoft 365 group for **Human Resource Team**
+
+- I deliberately used both security and Microsoft 365 group types for **Human Resource Team** because the team had two distinct needs that don't overlap: **license/access governance** (handled by the Security Group) and **team collaboration** (handled by the Microsoft 365 Group). 
 
 
 Note: The Microsoft 365 group can be used for all teams if required — for team shared collaborations, a shared inbox, shared calendar, and a private Teams space for the team to work from.
@@ -146,17 +152,19 @@ Abel Jaanus (UT support) needs elevated access, to enable them perform admin dut
 
 **Why this matters:** if a hacker steals Abel's password while the role is switched off, they get only an ordinary account, not admin power.
 
-I added a new assignment and added the **Helpdesk Administrator** role.**Global Administrator** role will be excessive for UT Support, so **helpdesk administrator** is suitable. 
+**STEPS**
+
+- I added a new assignment and added the **Helpdesk Administrator** role.**Global Administrator** role will be excessive for UT Support, so **helpdesk administrator** is suitable. 
 
 > ![Users List](screenshots/addrole.png)
->
-  > I added Abel Jaanus as a member to the role and set assignment type to `Eligible` and not `Active` . This way Abel is only eligible and needs to authenticate and activate, the assigned role.
-> 
+
+-  I added Abel Jaanus as a member to the role and set assignment type to `Eligible` and not `Active` . This way Abel is only eligible and needs to authenticate and activate, the assigned role.
+ 
 > ![Users List](screenshots/addmember.png)
->
-> I setup the assignment maximum duration to 4 hours, to require multi-factor authentication on activation, require justification, and
+
+-  I setup the assignment maximum duration to 4 hours, to require multi-factor authentication on activation, require justification, and
 require approval to activate.
-> 
+
 > ![Users List](screenshots/rolesettings.png)
 >
 > Abel is now `Eligible`  for the assigned role but needs to activate the role on their end before they can use it.
@@ -175,12 +183,19 @@ A new team group `IAM Team` was introduced here.
 |---|---|---|
 | Promotion (a Mover) | Abraham Kofi, from Receptionist to IAM Specialist | I updated his job details, added him to the IAM Specialist group, and removed him from the old Receptionist group. |
 
-I updated Abraham Kofi's job details, so the system knows he moved from the `Receptionist Team` and joined a new team
 
+**STEPS**
 
-I gave him his new access by adding him to the `IAM Team` group
+- I updated Abraham Kofi's job details, so the system knows he moved from the `Receptionist Team` to a new team `IAM Team`
+> ![Users List](screenshots/updatedetails.png)
 
-I took away the old receptionist access , he no longer needs. Abraham is no longer a Receptionist, so he should not keep his old access. If the access is not removed, he keeps collecting access for years, which is called **privilege creep**. This is how an ordinary account slowly turns into a very dangerous one.
+- I gave him his new access by adding him to the `IAM Team` group
+
+> ![Users List](screenshots/addabraham2.png)
+
+- I took away the old receptionist access , he no longer needs. Abraham is no longer a Receptionist, so he should not keep his old access. If the access is not removed, he keeps collecting access for years, which is called **privilege creep**. This is how an ordinary account slowly turns into a very dangerous one.
+
+> ![Users List](screenshots/removeabraham.png)
 
 ## 5. Leavers: Offboarding & the Cost of Deprovisioning Delay
 
