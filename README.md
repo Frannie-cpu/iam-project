@@ -203,5 +203,30 @@ A new team group `IAM Team` was introduced here.
 |---|---|---|
 | Resignation (a Leaver) | Abner Taavi, HR Manager | I blocked his sign-in, signed him out everywhere, removed his groups, saved his work, and took back his licence. |
 
+
+**STEPS**
+
+The order of these steps matter. First I stopped him getting in by blocking his sign-in, then I tidied everything else up.
+
+If I tidy up first and block him last, there is a gap where a leaver still has access, and that gap is where trouble happens.
+
+- Block His Sign-In - **Goal:** To stop Abner from being able to log in, without deleting anything yet.
+
+Blocking sign-in only stops new logins, but Abner might still be logged in on his phone or laptop right now. Revoking his sessions kicks him out of everything immediately.
+  
+- Sign Him out everywhere by revoking session - **Goal:** To end every session Abner currently has open.
+  
+- Remove His Groups and Any Admin Roles **Goal:** To take Abner out of every group and remove any admin role.
+  
+- Save His Work Before Anything Is Deleted **Goal:** To assign Abner's manager, access to Abner's mailbox and files, so the team keeps any relevant information (client emails, in-progress documents, shared file ownership).
+
+- Take back the License **Goal** To remove Abner's Microsoft 365 E5 licence so it can be reused.
+
+- Delete the account — **Goal:** To permanently remove Abner's identity object, once mailbox handover, compliance holds, and license reclaim are all confirmed complete (typically after 30days or a defined retention window, not on day one).
+
+
+Access control is time-critical, data governance is not — but data governance still has to happen before the object disappears.
+Blocking sign-in and revoking sessions removes the risk. Deleting removes the data and continuity.
+
 ## 6. Conditional-Access-Policy
 conditional access
