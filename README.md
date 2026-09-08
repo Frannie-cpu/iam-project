@@ -204,7 +204,7 @@ A new team group `IAM Team` was introduced here.
 | Resignation (a Leaver) | Abner Taavi, HR Manager | I blocked his sign-in, signed him out everywhere, removed his groups, saved his work, and took back his licence. |
 
 
-**STEPS**
+**OFFBOARDING STEPS**
 
 The order of these steps matter. First I stopped him getting in by blocking his sign-in, then I tidied everything else up.
 
@@ -227,6 +227,8 @@ Blocking sign-in only stops new logins, but Abner might still be logged in on hi
 
 Access control is time-critical, data governance is not — but data governance still has to happen before the object disappears.
 Blocking sign-in and revoking sessions removes the risk. Deleting removes the data and continuity.
+
+ **The Cost of Deprovisioning Delay**
 
 ## 6. Conditional-Access-Policy
 conditional access
