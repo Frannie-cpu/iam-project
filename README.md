@@ -15,7 +15,7 @@
 - [3. Just-In-Time Privileged Access (PIM)](#3-just-in-time-privileged-access-pim)
 - [4. Movers: Mid-Lifecycle Role Change](#4-movers-mid-lifecycle-role-change)
 - [5. Leavers: Offboarding & the Cost of Deprovisioning Delay](#5-leavers-offboarding--the-cost-of-deprovisioning-delay)
-- [6. Access reviews and periodic governance](#6-Access-reviews-and-periodic-governance)
+- [6. Access Governance: Periodic Access Review](#6-access-governance-periodic-access-review)
 ---
 
 ## Overview
@@ -207,5 +207,5 @@ If I tidy up first and block him last, there is a gap where a leaver still has a
 - **Avoids orphaned ownership** — Teams, shared mailboxes need reassignment first
 - **Preserves audit trail** — needed if questions come up later
 
- ## Access reviews and periodic governance
+ ## 6. Access Governance: Periodic Access Review
 
