@@ -45,7 +45,7 @@ NorthWind Dynamics is onboarding four new employees this week. As the IAM analys
 | Abel Jaanus    | UT Support   | Microsoft 365 E5     | User Technology      | Helpdesk/User Admin (via PIM) |
 | Abner Taavi    | HR Manager   | Microsoft 365 E5     | HR Group             | None                          |
 
-**Design principle:**  RBAC is applied such that admin rights match actual job need — not seniority. The HR Manager — despite being the most senior person on the Human Resource (HR) team — gets **no** admin role. Seniority is not the same as system control. Only UT Support gets the Help Desk/User Admin role and only temporarily, via PIM.
+**Design principle:**  RBAC is applied such that admin rights match actual job need — not seniority. The HR Manager — despite being the most senior person on the Human Resource (HR) team — gets **no** admin role. Seniority is not the same as system control. Only UT Support gets the Help Desk/User Admin role and only temporarily, via PIM. This is demonstrated in [3. Just-In-Time Privileged Access (PIM)](#3-just-in-time-privileged-access-pim)
 
 An Admin role is admin power, like resetting other people's passwords. 
 
