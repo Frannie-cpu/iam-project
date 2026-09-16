@@ -32,10 +32,7 @@ Real IAM work is a **lifecycle**: people join, their roles change, they leave â€
 - Access reviews and periodic governance
 
 ## Environment
-
-- Microsoft 365 Developer tenant (free â€” [developer.microsoft.com/microsoft-365/dev-program](https://developer.microsoft.com/microsoft-365/dev-program))
 - Microsoft Entra admin center
-- jwt.ms (Microsoft's token decoding tool) for inspecting OAuth tokens
 
 ## Scenario
 
