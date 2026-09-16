@@ -15,15 +15,6 @@
 - [3. Just-In-Time Privileged Access (PIM)](#3-just-in-time-privileged-access-pim)
 - [4. Movers: Mid-Lifecycle Role Change](#4-movers-mid-lifecycle-role-change)
 - [5. Leavers: Offboarding & the Cost of Deprovisioning Delay](#5-leavers-offboarding--the-cost-of-deprovisioning-delay)
-- [6. Conditional Access Policy](#6-conditional-access-policy)
-- [7. Authentication: SSO & the OAuth 2.0 Authorization Code Flow](#7-authentication-sso--the-oauth-20-authorization-code-flow)
-- [8. Least-Privilege Admin Roles](#8-least-privilege-admin-roles)
-- [9. Multi-Factor Authentication](#9-multi-factor-authentication)
-- [10. Access Reviews](#10-access-reviews)
-- [11. Conditional Access Hardening](#11-conditional-access-hardening)
-- [12. Over-Permissioned Service Account](#12-over-permissioned-service-account)
-- [Key Concepts Reference](#key-concepts-reference)
-- [Takeaways](#takeaways)
 
 ---
 
