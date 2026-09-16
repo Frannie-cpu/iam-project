@@ -195,6 +195,9 @@ If I tidy up first and block him last, there is a gap where a leaver still has a
 
 > ![Users List](screenshots/leaversprocessmap.png)
 
+
+> ![Users List](screenshots/entraiddeprovisioningprocess.png)
+
 **Access control is time-critical, data governance is not.** Blocking sign-in and revoking sessions removes the risk; deletion removes the data and continuity — and it has to happen only after that risk is already gone.
 
 **Cost of delay** — every minute an account stays live after offboarding is a live exploit window. Disabling access alone isn't enough; an open session on a phone or laptop still works until it's revoked.
