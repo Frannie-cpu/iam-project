@@ -24,16 +24,12 @@ Real IAM work is a **lifecycle**: people join, their roles change, they leave �
 
 ## Skills Demonstrated
 
-- User provisioning and attribute management in Microsoft Entra ID
-- Group-based access management and dynamic group rules
-- OAuth 2.0 / OpenID Connect authentication flow (Authorization Code flow)
+- User provisioning in Microsoft Entra ID
+- Group-based access management
 - Role-Based Access Control (RBAC) and least-privilege role assignment
-- Privileged Identity Management (PIM) — just-in-time admin access
-- Conditional Access policy design, including break-glass account handling
-- Access reviews and periodic governance
+- Privileged Identity Management (PIM)
 - Joiner-Mover-Leaver (JML) lifecycle management
-- Service account / non-human identity risk remediation
-- Security audit thinking — identifying and documenting real-world findings
+- Access reviews and periodic governance
 
 ## Environment
 
