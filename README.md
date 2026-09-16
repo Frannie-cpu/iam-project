@@ -209,3 +209,14 @@ If I tidy up first and block him last, there is a gap where a leaver still has a
 
  ## 6. Access Governance: Periodic Access Review
 
+PIM and group-based access control who gets in and for how long. Access Reviews control whether they should still be there.
+Access reviews in Microsoft Entra ID work as a scheduled re-certification system that sits on top of whatever access already exists — the goal is to catch "permission creep" before it becomes an audit finding or a security gap.
+
+> ![Users List](screenshots/periodicaccessreview.png)
+
+**Why This Matters**
+
+* **Prevents access creep:** Ensures users do not retain access they no longer need as their roles and responsibilities change.
+* **Supports least privilege:** Regularly validates that access remains appropriate for the user’s current role.
+* **Complements JML and PIM:** Adds an ongoing governance layer beyond initial provisioning, role changes, and time-limited privileged access.
+* **Improves accountability:** Creates a documented record of access decisions and supports security and compliance requirements.
