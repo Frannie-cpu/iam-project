@@ -194,7 +194,9 @@ The order of these steps matter. First I stopped him getting in by blocking his 
 If I tidy up first and block him last, there is a gap where he still has access, and that gap is where trouble can happen.
 
 
-> ![Users List](screenshots/entraiddeprovisioningprocess.png)
+
+> ![Users List](screenshots/purposefuloffboarding.png)
+
 
 **Access control is time-critical, data governance is not.** Blocking sign-in and revoking sessions removes the risk; deletion removes the data and continuity — and it has to happen only after that risk is already gone.
 
