@@ -191,9 +191,7 @@ A new team group `IAM Team` was introduced here.
 **OFFBOARDING STEPS**
 
 The order of these steps matter. First I stopped him getting in by blocking his sign-in, then I tidied everything else up.
-If I tidy up first and block him last, there is a gap where a leaver still has access, and that gap is where trouble happens.
-
-> ![Users List](screenshots/leaversprocessmap.png)
+If I tidy up first and block him last, there is a gap where he still has access, and that gap is where trouble can happen.
 
 
 > ![Users List](screenshots/entraiddeprovisioningprocess.png)
@@ -203,7 +201,7 @@ If I tidy up first and block him last, there is a gap where a leaver still has a
 **Cost of delay** — every minute an account stays live after offboarding is a live exploit window. Disabling access alone isn't enough; an open session on a phone or laptop still works until it's revoked.
 
 **Why deletion waits** — it's the one irreversible step. By the time I'd delete, the account is already locked down, so deletion becomes a data decision, not a security one:
-- **Compliance holds** — legal/e-discovery requirements may require retaining records
+- **Compliance holds** — legal requirements may require retaining records
 - **Avoids orphaned ownership** — Teams, shared mailboxes need reassignment first
 - **Preserves audit trail** — needed if questions come up later
 
