@@ -1,6 +1,6 @@
 # Identity & Access Management Lifecycle Lab — Microsoft Entra ID
 
-**A hands-on IAM project simulating the full employee identity lifecycle — provisioning, authentication, governance, and deprovisioning — for a fictional company, NorthWind Dynamics, using Microsoft Entra ID.**
+**A hands-on IAM project showing the full employee identity lifecycle — provisioning, authentication, governance, and deprovisioning — for a fictional company, NorthWind Dynamics, using Microsoft Entra ID.**
 
 ---
 
