@@ -68,7 +68,7 @@ The principle of least privilege is simple here: **Give people the least they ne
 > ![Users List](screenshots/replacement.png)
 
 ---
-Authentication(MFA) for new joiners is demonstrated in a separate OKTA project [here](https://github.com/Frannie-cpu/Okta-professional-hands-on-labs/blob/main/Lab-02-User-Lifecycle/README.md).
+**How Authentication(MFA) works for new joiners, is demonstrated in a separate OKTA project [here](https://github.com/Frannie-cpu/Okta-professional-hands-on-labs/blob/main/Lab-02-User-Lifecycle/README.md).**
 
 ## 2. Group-Based Access
 
