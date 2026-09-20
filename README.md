@@ -68,6 +68,7 @@ The principle of least privilege is simple here: **Give people the least they ne
 > ![Users List](screenshots/replacement.png)
 
 ---
+Authentication(MFA) for new joiners is demonstrated in a separate OKTA project here.
 
 ## 2. Group-Based Access
 
